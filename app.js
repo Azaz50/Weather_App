@@ -10,6 +10,7 @@ const wind_speed = document.getElementById('wind-speed');
 const location_not_found = document.querySelector('.location-not-found');
 
 const weather_body = document.querySelector('.weather-body');
+const api_key = "6b80bc6f0284b3d39dc295a1414b6a5f"
 
 
 async function checkWeather(city){
@@ -51,6 +52,9 @@ async function checkWeather(city){
             break;
         case 'Snow':
             weather_img.src = "assets/snow.png";
+            break;
+        case 'Haze':
+            weather_img.src = "assets/Haze.png";
             break;
         default :
             weather_img.src = "assets/404.png";
